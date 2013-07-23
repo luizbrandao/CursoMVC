@@ -1,0 +1,35 @@
+﻿@model CursoMVC.Models.Pessoa
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="Home/Lista" method="post">
+    <fieldset>
+        <legend>Pessoa</legend>
+        <div>
+            <label for="PessoaID">Código</label>
+            <div>
+                <input type="number" name="PessoaID" value="@Model.PessoaId" />
+            </div>
+        </div>
+        <div>
+            <label for="Nome">Nome</label>
+            <div>
+                <input type="text" name="Nome" value="@Model.Nome" />
+            </div>
+        </div>
+        <div>
+            <label for="Twitter">Twitter</label>
+            <div>
+                <input type="text" name="Twitter" value="@Model.Twitter" />
+            </div>
+        </div>
+        <div>
+            <p>
+                <input type="submit" name="enviar" value="Enviar" />
+            </p>
+        </div>
+    </fieldset>
+</form>
