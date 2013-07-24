@@ -1,0 +1,25 @@
+﻿@model CursoMVC.Models.Pessoa
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+<div class="fg6">
+    <form action="/" method="post">
+        <div>
+            <b>Nome: </b><p>@Model.Nome</p>
+        </div>
+        <div>
+            <b>Idade: </b><p>@Model.Idade</p>
+        </div>
+        <div>
+            <b>observacao: </b><p>@Model.Observacao</p>
+        </div>
+        <div>
+            <b>Email: </b><p>@Model.Email</p>
+        </div>
+        <div>
+            <b>Login: </b> <p>@Model.Login</p>
+        </div>
+    </form>
+</div>

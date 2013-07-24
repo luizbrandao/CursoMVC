@@ -12,13 +12,7 @@ namespace CursoMVC.Controllers
         // GET: /Home/
 
         public ActionResult Index(){
-            var pessoa = new CursoMVC.Models.Pessoa{
-                PessoaId = 1,
-                Nome = "Luiz Brandão",
-                Twitter = "@luizbrandaoj"
-            };
-            
-            return View(pessoa);
+            return View();
         }
 
         public ActionResult Sobre() {
@@ -27,11 +21,6 @@ namespace CursoMVC.Controllers
 
         [HttpPost]
         public ActionResult Lista(Pessoa pessoa){
-            //int PessoaId, string Nome, string Twitter Parametros
-            /*var pessoa = new Pessoa {};
-            pessoa.PessoaId = PessoaId;
-            pessoa.Nome = Nome;
-            pessoa.Twitter = Twitter;*/
             return View(pessoa);
         }
     }

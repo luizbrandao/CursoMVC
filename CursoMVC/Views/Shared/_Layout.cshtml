@@ -7,6 +7,7 @@
     <link href="~/Content/normalize.css" rel="stylesheet" />
     <link href="~/Content/fitgrid.css" rel="stylesheet" />
     <link href="~/Content/core.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
     
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,8 +17,12 @@
 			<div class="row">
 				<div class="fg12">
                     <h1>Luiz Brandão Site :D</h1>
-                    @Html.ActionLink("Index","Index","Home")
-                    @Html.ActionLink("Sobre","Sobre","Home")
+                    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+                        <ul>
+                            <li>@Html.ActionLink("Index","Index","Home")</li>
+                            <li>@Html.ActionLink("Sobre","Sobre","Home")</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row">
